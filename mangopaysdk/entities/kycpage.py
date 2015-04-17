@@ -14,6 +14,6 @@ class KycPage (Dto):
         
     def LoadDocumentFromFile(self, pathToFile):
         with open(pathToFile, "rb") as file:
-            bytes = base64.b64encode(file.read())
+            bytes = base64.b64encode(file.read().encode())
             self.File = bytes.decode("utf-8")
         return self
