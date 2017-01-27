@@ -57,6 +57,7 @@ class Test_PayIns(TestBase):
         self.assertEqual(wallet.Balance.Amount, beforeWallet.Balance.Amount + payIn.CreditedFunds.Amount)
         self.assertEqual(TransactionStatus.SUCCEEDED, payIn.Status)
         self.assertEqual(TransactionType.PAYIN, payIn.Type)
+        self.assertEqual(payIn.StatementDescriptor, 'TEST')
     
     def test_PayIns_Get_CardDirect(self):
         payIn = self.getJohnsPayInCardDirect()        

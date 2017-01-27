@@ -230,6 +230,7 @@ class TestBase(unittest.TestCase):
         payIn.ExecutionDetails = PayInExecutionDetailsDirect()
         payIn.ExecutionDetails.CardId = card.Id
         payIn.ExecutionDetails.SecureModeReturnURL = 'http://test.com'
+        payIn.StatementDescriptor = 'TEST'
         return self.sdk.payIns.Create(payIn)
     
     def getJohnsPayInBankWireDirect(self):

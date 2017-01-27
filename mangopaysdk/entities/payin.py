@@ -4,6 +4,7 @@ from mangopaysdk.entities.transaction import Transaction
 class PayIn (Transaction):
 
     def __init__(self, id = None):
+        self.StatementDescriptor = None
         self.CreditedWalletId = None
         # PayInPaymentType {CARD, BANK_WIRE, AUTOMATIC_DEBIT, DIRECT_DEBIT, PREAUTHORIZED }
         self.PaymentType = None
