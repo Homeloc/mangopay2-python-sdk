@@ -5,6 +5,7 @@ class User(EntityBase):
 
     def __init__(self, id = None):
         super(User, self).__init__(id)
+        self.KYCLevel = None
         # Required
         self.Email = None
         # PersonType
