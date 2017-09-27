@@ -9,6 +9,7 @@ class CardRegistration(EntityBase):
         self.AccessKey = None
         self.PreregistrationData = None
         self.CardRegistrationURL = None
+        self.CardType = None
         self.CardId = None
         self.RegistrationData = None
         self.ResultCode = None
