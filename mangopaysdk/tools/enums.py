@@ -59,6 +59,7 @@ class Mode3DSType:
 
 class CardType:
     CB_VISA_MASTERCARD = 'CB_VISA_MASTERCARD'
+    BCMC = 'BCMC'
     AMEX = 'AMEX'
     DINERS = 'DINERS'
     MAESTRO = 'MAESTRO'
