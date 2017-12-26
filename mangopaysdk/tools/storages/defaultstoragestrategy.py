@@ -3,6 +3,7 @@ from mangopaysdk.configuration import Configuration
 import os, json
 from mangopaysdk.types.oauthtoken import OAuthToken
 import lockfile.mkdirlockfile
+from lockfile import LockTimeout
 
 
 class DefaultStorageStrategy(IStorageStrategy):
